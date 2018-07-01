@@ -2,7 +2,7 @@
 
 const Promise = require("bluebird");
 const BaseStorage = require("ghost-storage-base");
-const GitHub = require("github");
+const GitHub = require("@octokit/rest");
 const fs = require("fs");
 const path = require("path");
 
@@ -23,8 +23,6 @@ class GitHubStorage extends BaseStorage {
 
         this.client.authenticate({
             type: config.type,
-            username: config.user,
-            password: config.password,
             token: config.token,
         });
     }

@@ -1,14 +1,15 @@
 {
     "name": "ghost-github",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Storage on GitHub for Ghost.",
     "main": "index.js",
+    "private": true,
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ifvictr/ghost-github.git"
+        "url": "git+https://github.com/tonyrewin/ghost-github.git"
     },
     "keywords": [
         "adapter",
@@ -18,19 +19,19 @@
         "storage",
         "store"
     ],
-    "author": "Victor Truong <me@ifvictr.com> (https://ifvictr.com)",
+    "author": "Tony Rewin <tony@lampheads.ru> (https://lampheads.ru)",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/ifvictr/ghost-github/issues"
+        "url": "https://github.com/tonyrewin/ghost-github/issues"
     },
-    "homepage": "https://github.com/ifvictr/ghost-github#readme",
+    "homepage": "https://github.com/tonyrewin/ghost-github#readme",
     "dependencies": {
-        "bluebird": "^3.5.0",
-        "build-url": "^1.0.10",
-        "ghost-storage-base": "0.0.1",
-        "github": "^13.1.0",
-        "is-url": "^1.2.2",
+        "bluebird": "^3.5.1",
+        "build-url": "^1.1.2",
+        "ghost-storage-base": "0.0.3",
+        "@octokit/rest": "^15.9.4",
+        "is-url": "^1.2.4",
         "remove-leading-slash": "^1.0.1",
-        "request": "^2.83.0"
+        "request": "^2.87.0"
     }
 }
