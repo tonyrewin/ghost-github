@@ -2,6 +2,10 @@
 
 Storage on GitHub for Ghost. Good for blogs hosted on platforms without a persistent filesystem (e.g. [Heroku](https://heroku.com)).
 
+## Fork is about versions upgrade
+
+...and using only oauth token.
+
 ## Installation
 
 ```
@@ -23,13 +27,10 @@ storage: {
     "ghost-github": {
         // Required: Can either be basic, oauth, or token
         type: "oauth",
-        user: "[my username here]",
-        // Either: GitHub login credentials (basic only)
-        password: "[my password here]",
         // Either: Personal access token (for token and oauth)
         token: "[my token here]",
         // Required: Name of repo you want to save files to
-        repo: "ghost-assets",
+        repo: "ghost-on-heroku",
         // Optional: Will save to branch of repo, defaults to master
         branch: "gh-pages",
         // Optional: Will place the image in the specified directory rather than root
@@ -38,25 +39,6 @@ storage: {
         baseUrl: "https://cdn.example.com"
     }
 }
-```
-
-### >= 1.0.0
-
-Options from above also apply here except for the formatting.
-
-```json
-"storage": {
-    "active": "ghost-github",
-    "ghost-github": {
-        "type": "...",
-        "user": "...",
-        "password": "...",
-        "token": "...",
-        "repo": "...",
-        "branch": "..."
-    }
-}
-
 ```
 
 ## Questions
