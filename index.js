@@ -24,7 +24,7 @@ class GitHubStorage extends BaseStorage {
         this.client.authenticate({
             type: config.type,
             token: config.token,
-            username: config.username
+            user: config.username
         });
     }
 
